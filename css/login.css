@@ -1,0 +1,92 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked + .custom-check:before {
+  content: "\f046";
+  font-family: "FontAwesome";
+}
+
+.custom-check:before {
+  content: "\f096";
+  font-family: "FontAwesome";
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/prn1.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+.content-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #061639;
+  opacity: 0.4;
+}
+.content-wrapper #login_page {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+.content-wrapper #login_page .content {
+  min-width: 350px;
+}
+.content-wrapper #login_page .content .btn-login {
+  border-radius: 25px !important;
+  color: white;
+}
+.content-wrapper #login_page .content a.forgetPwd, .content-wrapper #login_page .content a.signUp {
+  color: white;
+}
+.content-wrapper #login_page .content .social-icon-login .social-icon {
+  color: white;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 0;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+.content-wrapper #login_page .content .social-icon-login .social-icon i {
+  margin-right: 10px;
+}
+.content-wrapper #login_page .content .social-icon-login .fb {
+  background-color: #3b5998;
+}
+.content-wrapper #login_page .content .social-icon-login .fb:hover {
+  background-color: #28498b;
+}
+.content-wrapper #login_page .content .social-icon-login .google {
+  background-color: #DB4437;
+}
+.content-wrapper #login_page .content .social-icon-login .google:hover {
+  background-color: #D93025;
+}
+
+/*# sourceMappingURL=login.css.map */

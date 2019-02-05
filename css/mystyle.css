@@ -1,0 +1,236 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked + .custom-check:before {
+  content: "\f046";
+  font-family: "FontAwesome";
+}
+
+.custom-check:before {
+  content: "\f096";
+  font-family: "FontAwesome";
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+body #top_bar {
+  background-color: #005EA6;
+  color: #ffffff;
+  padding: 5px 0px;
+}
+body #top_bar i {
+  font-size: 20px;
+  padding-right: 8px;
+}
+body #top_bar .social-link a {
+  float: left;
+  text-decoration: none;
+  color: inherit;
+}
+body #top_bar .social-link a i {
+  padding: 0px 5px;
+  font-size: 26px;
+}
+body nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(90, 90, 90, 0.5);
+          box-shadow: 0 5px 15px 0 rgba(90, 90, 90, 0.5);
+}
+body nav .nav-link {
+  color: #000 !important;
+}
+body nav .nav-link:hover {
+  color: #005EA6 !important;
+}
+body nav a {
+  color: #000;
+  margin: 5px 10px;
+}
+body #banner {
+  background-image: url("../img/mero-wash-banner-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 560px;
+  position: relative;
+}
+body #banner:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+body #banner .content {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+body #banner .content h1 {
+  margin-bottom: 15px;
+}
+body #how_we_work {
+  padding: 50px 0px;
+  background-color: #fff;
+}
+body #how_we_work h2 {
+  padding-bottom: 40px;
+}
+body #how_we_work h3 {
+  padding: 8px 0px;
+}
+body #how_we_work img {
+  height: 80px;
+}
+body #place_order {
+  padding: 50px 0px;
+  background-color: #005EA6;
+  color: #fff;
+}
+body #place_order form {
+  /* width: 750px; */
+  margin: 0px auto;
+}
+body #pricing {
+  background-color: #fff;
+  padding: 50px 0px;
+  /*img{
+  	width: 100%;
+  	height: 250px;
+  }*/
+}
+body #pricing h2 {
+  padding-bottom: 30px;
+}
+body #pricing .item .image {
+  /*border-radius:;*/
+}
+body #pricing .item .image img {
+  border-radius: 50%;
+  width: 120px;
+}
+body #about_us {
+  background-color: #005EA6;
+  padding: 50px;
+  color: white;
+}
+body #about_us h2 {
+  padding-bottom: 30px;
+}
+body #contact_us {
+  padding: 50px 0px;
+  background-color: #116fb7;
+  color: white;
+}
+body #contact_us h2 {
+  padding-bottom: 30px;
+}
+body #contact_us ul li {
+  line-height: 3;
+  font-size: 20px;
+}
+body #contact_us ul li i {
+  color: white;
+  font-size: 22px;
+}
+body #contact_us .social-link {
+  font-size: 45px;
+}
+body #contact_us .social-link a {
+  color: inherit;
+}
+body #footer {
+  background-color: #005EA6;
+  color: #fff;
+}
+body #footer p {
+  padding: 15px 0px;
+}
+body #footer p a {
+  text-decoration: underline;
+  color: inherit;
+}
+body #footer .copyright {
+  text-align: center;
+}
+body .up_arrow {
+  visibility: hidden;
+  position: fixed;
+  right: 1%;
+  bottom: 4%;
+}
+body .up_arrow img {
+  height: 45px;
+}
+
+@media (max-width: 768px) {
+  #how_we_work {
+    text-align: center;
+  }
+
+  .up_arrow img {
+    height: 45px !important;
+  }
+}
+@media (max-width: 402px) {
+  #footer .hide {
+    display: none;
+  }
+}
+@media (max-width: 1005px) {
+  #top_bar {
+    display: none;
+  }
+}
+@media (max-width: 1210px) {
+  #top_bar .hide {
+    display: none;
+  }
+}
+@media (max-width: 1003px) {
+  #top_bar {
+    text-align: left !important;
+  }
+  #top_bar .hide {
+    display: inline-block;
+  }
+}
+@media (max-height: 500px) {
+  #banner {
+    height: 400px !important;
+  }
+}
+@media (max-width: 991px) {
+  nav ul li {
+    display: block;
+  }
+  nav ul li:hover {
+    background-color: #F4F6F6;
+  }
+}
+
+/*# sourceMappingURL=mystyle.css.map */

@@ -1,0 +1,255 @@
+@import "_color.scss";
+@import "_vendor.scss";
+
+
+h1, h2, h3, h4, h5, h6, p{
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-weight: bold;
+}
+input[type=checkbox]{
+	display: none;	
+	&:checked + .custom-check{
+		&:before{
+			content: "\f046";
+			font-family: "FontAwesome";
+			
+		}
+	}
+}
+.custom-check{
+	
+	&:before{
+		content: "\f096";
+		font-family: "FontAwesome";
+	}
+
+}
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+
+	#top_bar{
+		background-color: $primary_color;
+		color: $text2;
+		padding: 5px 0px;
+		i{
+			font-size: 20px;
+			padding-right: 8px;
+		}
+		.social-link{						
+			a{
+				float: left;
+				text-decoration: none;
+				color: inherit;
+				i{
+					padding: 0px 5px;
+					font-size: 26px;
+				}
+			}
+		}
+	}
+	nav{
+		position: sticky;
+		top: 0;
+		background-color: $tertiary_color;
+		z-index: 999;
+		box-shadow: 0 5px 15px 0 rgba(90,90,90,0.5);
+		.nav-link{
+			color: #000!important;
+			&:hover{
+				color: #005EA6 !important;
+			}
+		}
+		a{
+			color:#000;
+			margin: 5px 10px;
+		}
+	}
+	#banner{
+		background-image: url('../img/mero-wash-banner-image.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 560px;
+		position: relative;
+		&:before{
+			content:"";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-color: #000;
+			opacity: 0.5;
+		}
+		.content{
+			color: #fff;
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			transform: translate(50%,-50%);
+				h1{
+					margin-bottom: 15px;
+				}				
+			}
+		}
+		#how_we_work{
+			padding: 50px 0px;
+			background-color: #fff;
+			h2{
+				padding-bottom: 40px;
+			}
+			h3{
+				padding: 8px 0px;
+			}
+			img{
+				height: 80px;
+			}
+		}
+		#place_order{
+			padding: 50px 0px;
+			background-color: $primary_color;
+			color: #fff;
+			form{
+				/* width: 750px; */
+				margin: 0px auto;
+			}
+		}
+		#pricing{
+			background-color: #fff;
+			padding: 50px 0px;
+			h2{
+				padding-bottom: 30px;
+			} 
+			.item{
+				.image{
+					/*border-radius:;*/
+					img{
+						border-radius: 50%;
+						width: 120px;
+
+					}
+				}
+			}
+			/*img{
+				width: 100%;
+				height: 250px;
+			}*/
+		}
+		#about_us{
+			background-color: $primary_color;
+			padding: 50px;
+			color: white;
+			h2{
+				padding-bottom: 30px;
+
+			}
+		}
+		#contact_us{
+			padding: 50px 0px;
+			background-color: $primary_color + #111;
+			color: white;
+			h2{
+				padding-bottom: 30px;
+			}
+			ul{
+				li{
+					line-height: 3;
+					font-size: 20px;
+					i{
+						color: white;
+						font-size: 22px;
+					}
+				}
+			}
+			.social-link{
+				font-size: 45px;
+				a{
+					color: inherit;
+				}
+			}
+		}
+		#footer{
+			background-color: $primary_color;
+			color: #fff;
+			p{
+				padding: 15px 0px;
+				a{
+					text-decoration: underline;
+					color: inherit;
+				}
+			}
+			.copyright{
+				text-align: center;
+			}
+		}
+		.up_arrow{
+			visibility: hidden;
+			position: fixed;
+			right: 1%;
+			bottom: 4%;
+			img{
+				height: 45px;
+			}
+		}
+	}
+
+
+@media (max-width: 768px) {
+	#how_we_work{
+			text-align: center;
+	}
+	#footer{
+		.hide{
+			// display: none;
+		}
+	}
+	.up_arrow img{
+		height: 45px !important;
+	}
+}
+@media (max-width: 402px){
+	#footer{
+		.hide{
+			display: none;
+		}
+	}
+}
+@media (max-width: 1005px){
+	#top_bar{
+		display: none;
+	}
+}
+@media (max-width: 1210px){
+	#top_bar{
+		.hide{
+			display: none;
+		}
+	}
+}
+@media (max-width: 1003px){
+	#top_bar{
+		text-align: left !important;
+		.hide{
+			display: inline-block;
+		}
+	}
+}
+@media (max-height: 500px){
+	#banner{
+		height: 400px !important;
+	}
+}
+@media (max-width: 991px){
+	nav ul li{
+		display: block;
+		&:hover{
+			background-color: #F4F6F6;
+		}
+	}
+}
